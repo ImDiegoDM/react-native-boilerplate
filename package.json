@@ -19,7 +19,7 @@
     }
   },
   "lint-staged":{
-    "*.{ts,tsx}":["eslint --fix","git add ."]
+    "*.{ts,tsx}":"eslint --fix"
   },
   "dependencies": {
     "expo": "~36.0.0",
