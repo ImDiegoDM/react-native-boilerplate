@@ -12,6 +12,11 @@
   "jest": {
     "preset": "react-native"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --no-verify"
+    }
+  },
   "lint-staged":{
     "*.{ts,tsx}":["eslint --fix","git add ."]
   },
