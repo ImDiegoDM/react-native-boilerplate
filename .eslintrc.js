@@ -1,6 +1,7 @@
 module.exports = {
   env: {
     es6: true,
+    jest: true
   },
   extends: [
     'plugin:react/recommended',
@@ -23,5 +24,9 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    "react/jsx-filename-extension": [1, { "extensions": ["tsx"] }],
+    "import/no-unresolved": "off",
+    "import/extensions": ["error", "never", { "svg": "always","json":"always" }],
+    "import/prefer-default-export": "off"
   },
 };
